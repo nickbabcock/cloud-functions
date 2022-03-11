@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "jomini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.mjs",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "Nick Babcock <nbabcock19@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jomini": "^0.6.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.25"
+  }
+}
