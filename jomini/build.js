@@ -24,11 +24,11 @@ let passThroughWasmPlugin = {
 
 require("esbuild")
   .build({
-    entryPoints: ["src/index.mjs"],
+    entryPoints: ["./src/index.ts"],
     format: "esm",
     bundle: true,
     minify: process.env.NODE_ENV === "production",
-    outfile: "dist/index.mjs",
+    outfile: "dist/index.js",
     plugins: [passThroughWasmPlugin],
   })
   .catch(() => process.exit(1));

@@ -1,7 +1,7 @@
 import { Jomini } from "jomini/slim";
 import wasm from "jomini/jomini.wasm";
 
-async function fetch(req) {
+const fetch: ExportedHandlerFetchHandler = async (req) => {
   const jomini = await Jomini.initialize({ wasm });
 
   const data = new Uint8Array(await req.arrayBuffer());
