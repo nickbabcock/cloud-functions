@@ -1,0 +1,20 @@
+name = "brotli"
+type = "javascript"
+
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-03-07"
+
+[build]
+command = "NODE_ENV=production npm run build"
+
+[build.upload]
+dir = "dist"
+format = "modules"
+main = "index.mjs"
+
+[[build.upload.rules]]
+globs = ["**/*.wasm"]
+type  = "CompiledWasm"

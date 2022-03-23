@@ -28,7 +28,7 @@ require("esbuild")
     format: "esm",
     bundle: true,
     minify: process.env.NODE_ENV === "production",
-    outfile: "dist/index.js",
+    outfile: "dist/index.mjs",
     plugins: [passThroughWasmPlugin],
   })
   .catch(() => process.exit(1));

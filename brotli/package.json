@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "brotli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.mjs",
+  "scripts": {
+    "build": "npm run build:wasm && cp ../jomini/build.js . && node build.js",
+    "build:wasm": "wasm-pack build -t web crate/"
+  },
+  "author": "Nick Babcock <nbabcock19@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.4.0",
+    "esbuild": "^0.14.27",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "crate": "file:crate/pkg"
+  }
+}
