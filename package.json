@@ -1,0 +1,11 @@
+{
+  "name": "@nickbabcock/cloud-functions",
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "publish": "npm run publish --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "workspaces": [
+    "src/*"
+  ]
+}
