@@ -12,10 +12,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '16.x'
     - name: Install wasm-pack
       run:  npm install -g wasm-pack@0.10.1
     - name: npm ci, build, and test
