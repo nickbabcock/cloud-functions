@@ -12,11 +12,11 @@
   "author": "Nick Babcock <nbabcock19@hotmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jomini": "^0.6.4"
+    "jomini": "^0.7.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^3.10.0",
-    "esbuild": "^0.14.39",
-    "typescript": "^4.6.4"
+    "@cloudflare/workers-types": "^3.14.0",
+    "esbuild": "^0.14.48",
+    "typescript": "^4.7.4"
   }
 }
