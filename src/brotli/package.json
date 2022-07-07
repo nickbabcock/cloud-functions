@@ -3,12 +3,12 @@
   "name": "@nickbabcock/cloud-functions-brotli",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.mjs",
+  "main": "dist/index.mjs",
   "scripts": {
     "preinstall": "npm run build:wasm",
     "build": "npm run build:wasm && cp ../jomini/build.js . && node build.js",
     "build:wasm": "wasm-pack build -t web crate/",
-    "publish": "wrangler publish",
+    "upload": "NODE_ENV=production npm run build && wrangler publish",
     "test": "tsc"
   },
   "author": "Nick Babcock <nbabcock19@hotmail.com>",

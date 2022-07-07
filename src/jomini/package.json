@@ -3,10 +3,10 @@
   "name": "@nickbabcock/cloud-functions-jomini",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.mjs",
+  "main": "dist/index.mjs",
   "scripts": {
     "build": "node build.js",
-    "publish": "wrangler publish",
+    "upload": "NODE_ENV=production npm run build && wrangler publish",
     "test": "tsc"
   },
   "author": "Nick Babcock <nbabcock19@hotmail.com>",
