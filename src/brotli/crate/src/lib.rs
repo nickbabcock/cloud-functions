@@ -7,7 +7,7 @@ fn new_brotli<W: Write>(writer: W) -> brotli::CompressorWriter<W> {
 
 #[wasm_bindgen]
 pub struct BrotliCompressor {
-    writer_ptr: *mut brotli::CompressorWriter<Vec<u8>>
+    writer_ptr: *mut brotli::CompressorWriter<Vec<u8>>,
 }
 
 #[wasm_bindgen]
@@ -17,9 +17,7 @@ impl BrotliCompressor {
         let sink = Vec::new();
         let writer = new_brotli(sink);
         let writer_ptr = Box::into_raw(Box::new(writer));
-        BrotliCompressor {
-            writer_ptr
-         }
+        BrotliCompressor { writer_ptr }
     }
 
     #[wasm_bindgen]
