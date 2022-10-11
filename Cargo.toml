@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "src/brotli/crate",
+    "src/highway-wasi"
 ]
 
 [profile.release]

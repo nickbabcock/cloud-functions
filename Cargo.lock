@@ -59,6 +59,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "highway"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3688f13e7735ae5ca93edc490f6c5885b77d473255bc1fed92b9c805f972bf94"
+
+[[package]]
+name = "highway-wasi"
+version = "0.1.0"
+dependencies = [
+ "highway",
+]
+
+[[package]]
 name = "log"
 version = "0.4.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
