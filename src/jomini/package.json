@@ -12,7 +12,7 @@
   "author": "Nick Babcock <nbabcock19@hotmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jomini": "^0.7.0"
+    "jomini": "^0.8.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.16.0",
