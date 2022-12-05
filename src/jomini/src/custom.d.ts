@@ -1,5 +1,5 @@
 declare module "jomini/slim" {
-  export const Jomini: typeof import("jomini").Jomini;
+  export * from "jomini";
 }
 
 declare module "*.wasm" {

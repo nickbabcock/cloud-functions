@@ -1,5 +1,5 @@
 declare module "highwayhasher/slim" {
-  export const HighwayHash: typeof import("highwayhasher").HighwayHash;
+  export * from "highwayhasher";
 }
 
 declare module "*.wasm" {
