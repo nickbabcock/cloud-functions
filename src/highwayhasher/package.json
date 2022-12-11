@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.mjs",
+  "type": "module",
   "scripts": {
     "build": "cp ../jomini/build.js . && node build.js",
     "upload": "NODE_ENV=production npm run build && wrangler publish",
@@ -17,6 +18,6 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
-    "highwayhasher": "^0.4.1"
+    "highwayhasher": "^0.4.2"
   }
 }
