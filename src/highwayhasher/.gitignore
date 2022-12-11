@@ -1,6 +1,6 @@
 /target
 /dist
-build.js
+build.cjs
 **/*.rs.bk
 Cargo.lock
 bin/

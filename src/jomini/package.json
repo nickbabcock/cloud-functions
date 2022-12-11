@@ -6,7 +6,7 @@
   "main": "dist/index.mjs",
   "type": "module",
   "scripts": {
-    "build": "node build.js",
+    "build": "node build.cjs",
     "upload": "NODE_ENV=production npm run build && wrangler publish",
     "test": "tsc"
   },

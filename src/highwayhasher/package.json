@@ -6,7 +6,7 @@
   "main": "dist/index.mjs",
   "type": "module",
   "scripts": {
-    "build": "cp ../jomini/build.js . && node build.js",
+    "build": "cp ../jomini/build.cjs . && node build.cjs",
     "upload": "NODE_ENV=production npm run build && wrangler publish",
     "test": "tsc"
   },

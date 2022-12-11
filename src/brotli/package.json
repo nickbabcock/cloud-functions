@@ -6,7 +6,7 @@
   "main": "dist/index.mjs",
   "scripts": {
     "preinstall": "npm run build:wasm",
-    "build": "npm run build:wasm && cp ../jomini/build.js . && node build.js",
+    "build": "npm run build:wasm && cp ../jomini/build.cjs . && node build.cjs",
     "build:wasm": "wasm-pack build -t web crate/",
     "upload": "NODE_ENV=production npm run build && wrangler publish",
     "test": "tsc"
