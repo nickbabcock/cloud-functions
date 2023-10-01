@@ -13,9 +13,9 @@
   "author": "Nick Babcock <nbabcock19@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20230801.0",
-    "esbuild": "0.18.17",
-    "typescript": "5.1.6"
+    "@cloudflare/workers-types": "4.20230922.0",
+    "esbuild": "0.19.4",
+    "typescript": "5.2.2"
   },
   "dependencies": {
     "highwayhasher": "0.4.3"
