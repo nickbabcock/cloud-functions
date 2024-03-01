@@ -13,8 +13,8 @@
   "author": "Nick Babcock <nbabcock19@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240117.0",
-    "esbuild": "0.20.0",
+    "@cloudflare/workers-types": "4.20240222.0",
+    "esbuild": "0.20.1",
     "typescript": "5.3.3"
   },
   "dependencies": {
