@@ -14,9 +14,9 @@
   "author": "Nick Babcock <nbabcock19@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240222.0",
-    "esbuild": "0.20.1",
-    "typescript": "5.3.3"
+    "@cloudflare/workers-types": "4.20240423.0",
+    "esbuild": "0.20.2",
+    "typescript": "5.4.5"
   },
   "dependencies": {
     "crate": "file:crate/pkg"
