@@ -16,8 +16,8 @@
     "jomini": "0.9.1"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240423.0",
-    "esbuild": "0.20.2",
+    "@cloudflare/workers-types": "4.20240605.0",
+    "esbuild": "0.21.5",
     "typescript": "5.4.5"
   }
 }
