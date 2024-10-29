@@ -2,7 +2,7 @@
   "name": "@nickbabcock/cloud-functions",
   "scripts": {
     "build": "npm run build --workspaces",
-    "upload": "npm run upload --workspaces",
+    "deploy": "npm run deploy --workspaces",
     "test": "npm run test --workspaces"
   },
   "workspaces": [

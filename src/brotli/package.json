@@ -5,18 +5,18 @@
   "description": "",
   "main": "dist/index.mjs",
   "scripts": {
-    "preinstall": "npm run build:wasm",
-    "build": "npm run build:wasm && cp ../jomini/build.cjs . && node build.cjs",
+    "build": "wrangler deploy --dry-run --outdir=dist",
     "build:wasm": "wasm-pack build -t web crate/",
-    "upload": "NODE_ENV=production npm run build && wrangler publish",
-    "test": "tsc"
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "test": "npm run build:wasm && tsc"
   },
   "author": "Nick Babcock <nbabcock19@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@cloudflare/workers-types": "4.20240605.0",
-    "esbuild": "0.21.5",
-    "typescript": "5.4.5"
+    "typescript": "5.4.5",
+    "wrangler": "3.83.0"
   },
   "dependencies": {
     "crate": "file:crate/pkg"

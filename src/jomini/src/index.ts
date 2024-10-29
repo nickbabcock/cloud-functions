@@ -1,5 +1,5 @@
 import { Jomini } from "jomini/slim";
-import wasm from "jomini/jomini.wasm";
+import wasm from "../../../node_modules/jomini/dist/jomini_js_bg.wasm";
 
 const fetch: ExportedHandlerFetchHandler = async (req) => {
   const jomini = await Jomini.initialize({ wasm });
