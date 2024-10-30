@@ -1,5 +1,5 @@
 import { HighwayHash } from "highwayhasher/slim";
-import wasm from "../../../node_modules/highwayhasher/dist/highwayhasher_wasm_simd_bg.wasm"
+import wasm from "highwayhasher/simd.wasm"
 
 const fetch: ExportedHandlerFetchHandler = async (req) => {
   const module = await HighwayHash.loadModule({ wasm });
