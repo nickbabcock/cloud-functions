@@ -34,3 +34,9 @@ impl BrotliCompressor {
         writer.into_inner()
     }
 }
+
+impl Default for BrotliCompressor {
+    fn default() -> Self {
+        Self::new()
+    }
+}
