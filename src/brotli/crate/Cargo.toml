@@ -8,7 +8,7 @@ edition = "2018"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-wasm-bindgen = "0.2.79"
+wasm-bindgen = "0.2.100"
 brotli = "5.0.0"
 
 [package.metadata.wasm-pack.profile.release]
