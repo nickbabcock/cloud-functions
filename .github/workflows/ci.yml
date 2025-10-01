@@ -12,8 +12,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Install wasm-pack
-      run:  npm install -g wasm-pack@0.10.1
+    - uses: jdx/mise-action@v2
+    - run: rustup target add wasm32-unknown-unknown
+    - run: mise run build:wasm
     - name: npm ci, build, and test
       run: |
         npm ci

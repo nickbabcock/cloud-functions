@@ -1,5 +1,5 @@
-import init, { BrotliCompressor } from "crate";
-import wasm from "crate/crate_bg.wasm";
+import init, { BrotliCompressor } from "../crate/pkg/crate";
+import wasm from "../crate/pkg/crate_bg.wasm";
 
 const fetch: ExportedHandlerFetchHandler = async (req) => {
   await init(wasm);
