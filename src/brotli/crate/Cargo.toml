@@ -10,6 +10,3 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 wasm-bindgen = "0.2.100"
 brotli = "5.0.0"
-
-[package.metadata.wasm-pack.profile.release]
-wasm-opt = false
